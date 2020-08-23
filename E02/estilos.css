@@ -1,3 +1,5 @@
+*{font-family: 'Roboto', sans-serif;}
+
 /*quitar los border a la imágenes cuanto son hipervínculos*/
 img{ border:0; }
 
@@ -26,18 +28,21 @@ h2{	font-size: 1.5em; }
 /*Color en degradado creado en http://www.colorzilla.com/gradient-editor/ */
 	padding: 20px;
 	height:60px;
+	background-color: #A3D798;
 }
 
 #header h1 { 
 	margin: 0;
-	font-weight:300;	  
+	font-weight:300;
+	color: #ffefe4;
 }
 /*********************************/
 /*Menú*/
 #navigation {
 	float: left;
 	width: 100%;
-	border:1px solid #000
+	border:1px solid #000;
+	background-color: #70C08D;
 }
 
 #navigation ul {	
@@ -52,10 +57,11 @@ h2{	font-size: 1.5em; }
 	display: block;
 	float: left;
 	padding: 5px 10px;
-	text-decoration: none;	
+	text-decoration: none;
+	color: #ffefe4;
 }
 
-#navigation li a:hover { background:#FF0000; }
+#navigation li a:hover { background:#36857B; }
 /*********************************/
 /*Contenido*/
 #content {
@@ -65,15 +71,82 @@ h2{	font-size: 1.5em; }
 
 #content a { 
 	/* Color de los hipervinculos*/
+	font-size: 18px;
+	color: #36857B;
 }
 
 #content h1 {		
-	padding-bottom: 10px;	
+	padding-bottom: 10px;
+	border-bottom: solid #36857B;
 }
 
 #content h1, #content h2 {
-	margin: 0 0 1em 0;	
+	margin: 0 0 1em 0;
+	color: #36857B;
 }
+
+p{
+	color: #36857B;
+}
+
+
+th{
+	background-color: #A3D798;
+	color: darkslategrey;
+}
+
+table{
+	text-align: center;
+	border-collapse: collapse;
+}
+
+th,td {
+	border: 1px solid #acacac;
+}
+
+tr:nth-child(even){
+	background-color: #aaccaa;
+}
+
+legend{
+	font-size: 22px;
+	color: #36857B;
+}
+
+label{
+	font-size: 20px;
+	color: #36857B;
+}
+
+fieldset{
+	border-radius: 10px;
+}
+
+form  select,
+form input,
+form textarea{
+	border-radius: 10px;
+	padding: 10px;
+	border: 1px solid #486c94;
+	font-size: 14px;
+	box-shadow: 0 0 5px #486c94 ;
+}
+
+button{
+	border-radius: 10px;
+	padding: 10px;
+	border: 1px solid #486c94;
+	font-size: 14px;
+	background-color: #70C08D;
+	color: darkslategrey;
+	box-shadow: 0 0 2px #486c94 ;
+}
+
+button:hover{
+	background-color: #36857B;
+	color: #ffefe4;
+}
+
 /*********************************/
 /*Pie*/
 #footer {
@@ -81,6 +154,7 @@ h2{	font-size: 1.5em; }
 	padding: 15px;
 	height: 150px;
 	border: 1px solid #000;
+	background-color: #A3D798;
 }
 
 #footer p { float:right; }
@@ -92,11 +166,18 @@ h2{	font-size: 1.5em; }
 	list-style-type: none;
 	text-align:left;
 	margin: 0 0 10px 0;		
-	padding:0;	
+	padding:0;
+	font-size: 18px;
 }
 
 #footer ul li a {
 	text-decoration:none;
+	color: #36857B;
+
+}
+
+#footer ul li a :after{
+	color: #36857B;
 }
 
 #footer ul li a:hover {	text-decoration:underline; }
@@ -138,3 +219,4 @@ label.chk input {
 #horizontal textarea, .horizontal select, .horizontal input, .horizontal label{
 	display:inline;
 }
+
